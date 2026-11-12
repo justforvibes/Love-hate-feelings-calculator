@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://quge5.com/88/tag.min.js" data-zone="294145" async data-cfasync="false"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feelings Calculator — Love, Crush & Hate Calculator | GTA 6 Edition</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Feelings Calculator","alternateName":["JustForVibes"],"url":"https://feelings-calculator.xyz/"}
+  </script>
+  <meta name="description" content="Free feelings calculator: love, crush, hate and friendship percentage between two people. GTA 6 Edition: Jason and Lucia love calculator, Bonnie and Clyde compatibility, break-up chances and GTA 6 hype meter."/>
+  <meta name="keywords" content="gta 6 love calculator, jason and lucia love calculator, jason and lucia compatibility test, jason and lucia love percentage, jason and lucia trust test, will jason and lucia break up, gta 6 couple compatibility, gta 6 relationship quiz, bonnie and clyde love calculator, bonnie and clyde compatibility test, gta 6 hype meter, gta 6 love story, jason and lucia love story, gta 6 love calculator hindi, love hate calculator, feelings calculator, love calculator, crush percentage, friendship test, situationship meter, BFF test, love percentage, relationship calculator, what are the chances, feelings between two people"/>
+  <meta property="og:title" content="Feelings Calculator — GTA 6 Edition (Jason & Lucia Love %)"/>
+  <meta property="og:site_name" content="Feelings Calculator"/>
+  <meta property="og:description" content="Calculate Jason and Lucia love %, your GTA 6 hype and more. Free, no sign-up, share your result!"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://feelings-calculator.xyz/"/>
+  <meta property="og:image" content="https://feelings-calculator.xyz/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Feelings Calculator - Love, Crush, Hate and GTA 6 Edition"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Feelings Calculator - GTA 6 Edition (Jason &amp; Lucia Love %)"/>
+  <meta name="twitter:description" content="Calculate love, crush, hate and friendship percentage. Try Jason and Lucia love calculator!"/>
+  <meta name="twitter:image" content="https://feelings-calculator.xyz/og-image.png"/>
+  <link rel="canonical" href="https://feelings-calculator.xyz/"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#ff4d6d"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-title" content="Feelings Calculator"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d0d0f; --card: #16161a; --border: #2a2a35;
+      --accent: #ff4d6d; --accent2: #c77dff;
+      --text: #e8e8f0; --muted: #7a7a90; --glow: rgba(255,77,109,0.18);
+    }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; padding: 40px 16px 80px;
+      position: relative; overflow-x: hidden;
+    }
+    body::before, body::after {
+      content: ''; position: fixed; border-radius: 50%;
+      filter: blur(90px); opacity: 0.18; pointer-events: none; z-index: 0;
+    }
+    body::before { width:500px;height:500px;background:var(--accent);top:-100px;left:-150px; }
+    body::after  { width:400px;height:400px;background:var(--accent2);bottom:-80px;right:-120px; }
+    .wrap { position:relative;z-index:1;width:100%;max-width:560px; }
+
+    header { text-align:center;margin-bottom:24px; }
+    .tag { display:inline-block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px; }
+    h1 { font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3rem);font-weight:700;line-height:1.15;
+      background:linear-gradient(135deg,#fff 30%,var(--accent2));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+    header p { margin-top:12px;color:var(--muted);font-size:14px;font-weight:300; }
+
+    /* AD LINK 1 — Explore More banner under header */
+    .explore-banner {
+      display:flex;align-items:center;justify-content:space-between;
+      background:linear-gradient(135deg,rgba(255,77,109,0.12),rgba(199,125,255,0.12));
+      border:1px solid rgba(255,77,109,0.25);
+      border-radius:14px;padding:12px 18px;margin-bottom:24px;
+      text-decoration:none;transition:all 0.2s;
+    }
+    .explore-banner:hover { border-color:var(--accent);background:linear-gradient(135deg,rgba(255,77,109,0.18),rgba(199,125,255,0.18)); }
+    .explore-banner-text { font-size:13px;color:var(--text);line-height:1.4; }
+    .explore-banner-text span { display:block;font-size:11px;color:var(--muted);margin-top:2px; }
+    .explore-banner-arrow { font-size:18px;color:var(--accent); }
+
+    .card { background:var(--card);border:1px solid var(--border);border-radius:24px;padding:32px 28px;box-shadow:0 0 60px var(--glow); }
+
+    .emotion-grid { display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px; }
+    .pill { cursor:pointer;padding:7px 16px;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:13px;transition:all 0.2s;display:flex;align-items:center;gap:6px; }
+    .pill:hover { border-color:var(--accent);color:var(--text); }
+    .pill.active { background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 18px rgba(255,77,109,0.4); }
+    .pill-custom { cursor:pointer;padding:7px 16px;border-radius:100px;border:1.5px dashed var(--border);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:13px;transition:all 0.2s;display:flex;align-items:center;gap:6px; }
+    .pill-custom:hover { border-color:var(--accent2);color:var(--accent2); }
+    .pill-custom.active { border-style:solid;background:rgba(199,125,255,0.15);border-color:var(--accent2);color:var(--accent2); }
+    .custom-input-wrap { display:none;margin-bottom:16px;animation:fadeUp 0.3s ease; }
+    .custom-input-wrap.show { display:block; }
+    .custom-input-wrap label { font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);display:block;margin-bottom:8px; }
+    .custom-emotion-input { width:100%;background:#1e1e26;border:1.5px solid var(--accent2);border-radius:12px;padding:12px 16px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;outline:none; }
+    .custom-emotion-input::placeholder { color:var(--muted); }
+    .mode-row { display:flex;gap:10px;margin-bottom:24px; }
+    .mode-btn { flex:1;padding:10px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;transition:all 0.2s; }
+    .mode-btn.active { background:rgba(199,125,255,0.15);border-color:var(--accent2);color:var(--accent2); }
+    .input-row { display:flex;align-items:center;gap:10px;margin-bottom:20px;flex-wrap:wrap; }
+    .input-row input { flex:1;min-width:120px;background:#1e1e26;border:1px solid var(--border);border-radius:12px;padding:13px 16px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s; }
+    .input-row input:focus { border-color:var(--accent); }
+    .input-row input::placeholder { color:var(--muted); }
+    .connector { color:var(--muted);font-size:12px;font-style:italic;white-space:nowrap; }
+    @media (max-width:400px) { .input-row { flex-direction:column;align-items:stretch; } .input-row input { min-width:unset;width:100%; } .connector { text-align:center; } }
+    .calc-btn { width:100%;padding:15px;border-radius:14px;border:none;background:linear-gradient(135deg,var(--accent),#ff8fa3);color:#fff;font-family:'Playfair Display',serif;font-size:16px;font-style:italic;cursor:pointer;transition:opacity 0.2s,transform 0.15s;letter-spacing:0.5px; }
+    .calc-btn:hover { opacity:0.9;transform:translateY(-1px); }
+    .calc-btn:active { transform:scale(0.98); }
+    .error { color:var(--accent);font-size:13px;margin-top:10px;text-align:center; }
+
+    .result-box { margin-top:28px;text-align:center;animation:fadeUp 0.5s ease; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+    .result-emoji { font-size:3rem;margin-bottom:10px; }
+    .result-percent { font-family:'Playfair Display',serif;font-size:clamp(3rem,12vw,5rem);font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1; }
+    .result-label { margin-top:8px;font-size:14px;color:var(--muted); }
+    .quote-wrapper { margin-top:18px;position:relative; }
+    .result-quote { padding:16px 44px 16px 20px;background:#1e1e26;border-left:3px solid var(--accent);border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:0 12px 12px 0;font-size:13px;color:var(--text);font-style:italic;line-height:1.6;text-align:left;width:100%;min-height:60px;resize:none;outline:none;font-family:'DM Sans',sans-serif; }
+    .result-quote:focus { border-color:var(--accent2);font-style:normal; }
+    .edit-btn { position:absolute;top:10px;right:10px;background:transparent;border:1px solid var(--border);border-radius:8px;color:var(--muted);font-size:13px;cursor:pointer;padding:4px 8px;transition:all 0.2s; }
+    .edit-btn:hover { border-color:var(--accent2);color:var(--accent2); }
+    .edit-hint { font-size:11px;color:var(--muted);text-align:right;margin-top:5px;display:none; }
+    .share-btn { margin-top:14px;width:100%;padding:12px;border-radius:12px;border:1px solid var(--accent2);background:transparent;color:var(--accent2);font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;transition:all 0.2s; }
+    .share-btn:hover { background:rgba(199,125,255,0.1); }
+
+    /* AD LINK 2 — After result card */
+    .result-ad {
+      display:none;margin-top:14px;
+      background:linear-gradient(135deg,rgba(199,125,255,0.08),rgba(255,77,109,0.08));
+      border:1px solid rgba(199,125,255,0.2);
+      border-radius:12px;padding:13px 18px;
+      text-decoration:none;transition:all 0.2s;
+      align-items:center;justify-content:space-between;
+    }
+    .result-ad.show { display:flex; }
+    .result-ad:hover { border-color:var(--accent2); }
+    .result-ad-left { display:flex;align-items:center;gap:10px; }
+    .result-ad-emoji { font-size:1.4rem; }
+    .result-ad-text { font-size:13px;color:var(--text);line-height:1.4; }
+    .result-ad-text span { display:block;font-size:11px;color:var(--muted);margin-top:2px; }
+    .result-ad-btn { font-size:11px;color:#fff;background:var(--accent2);padding:5px 12px;border-radius:100px;white-space:nowrap;font-weight:500; }
+
+    .how-card { margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px 22px; }
+    .how-card h2 { font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:18px;color:var(--text); }
+    .how-grid { display:flex;flex-direction:column;gap:14px; }
+    .how-item { display:flex;gap:14px;align-items:flex-start; }
+    .how-num { min-width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0; }
+    .how-text strong { display:block;font-size:13px;color:var(--text);margin-bottom:3px; }
+    .how-text span { font-size:12px;color:var(--muted);line-height:1.5; }
+    .mode-diff { margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid var(--border); }
+    .mode-diff-row { display:flex; }
+    .mode-box { flex:1;padding:14px 16px;font-size:12px;line-height:1.6; }
+    .mode-box:first-child { border-right:1px solid var(--border);background:rgba(255,77,109,0.06); }
+    .mode-box:last-child { background:rgba(199,125,255,0.06); }
+    .mode-tag { display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px;padding:2px 8px;border-radius:100px; }
+    .mode-box:first-child .mode-tag { background:rgba(255,77,109,0.2);color:var(--accent); }
+    .mode-box:last-child .mode-tag { background:rgba(199,125,255,0.2);color:var(--accent2); }
+    .mode-box p { color:var(--muted);font-size:12px; }
+    .mode-box code { display:block;margin-top:6px;font-size:11px;color:var(--text);background:#1e1e26;padding:5px 8px;border-radius:6px;font-family:monospace; }
+    .trend-card { margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px; }
+    .trend-tags { display:flex;flex-wrap:wrap;gap:8px; }
+    .ttag { cursor:pointer;padding:8px 14px;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:12px;transition:all 0.2s; }
+    .ttag:hover { border-color:var(--accent);color:var(--text);background:rgba(255,77,109,0.08); }
+    .seo-block { margin-top:20px;padding:20px 22px;background:var(--card);border:1px solid var(--border);border-radius:20px; }
+    .seo-block p { font-size:12px;color:var(--muted);line-height:1.8; }
+    .seo-block strong { color:var(--text);font-weight:500; }
+    .gta-card { margin-bottom:24px;background:linear-gradient(135deg,rgba(255,77,109,0.10),rgba(199,125,255,0.10));border:1px solid rgba(255,77,109,0.3);border-radius:20px;padding:20px 18px; }
+    .gta-top { display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:14px; }
+    .gta-badge { font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));padding:5px 12px;border-radius:100px; }
+    .gta-date { font-size:12px;color:var(--muted); }
+    .gta-countdown { display:flex;gap:8px;margin-bottom:14px; }
+    .gta-box { flex:1;background:#1e1e26;border:1px solid var(--border);border-radius:12px;padding:10px 4px;text-align:center; }
+    .gta-num { font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1; }
+    .gta-lbl { font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:3px; }
+    .gta-live { width:100%;text-align:center;font-size:14px;color:var(--text);padding:12px;background:#1e1e26;border-radius:12px; }
+    .gta-sub { font-size:12px;color:var(--muted);margin-bottom:10px; }
+    .gta-chips { display:flex;flex-wrap:wrap;gap:8px; }
+    .gta-chip { cursor:pointer;padding:8px 14px;border-radius:100px;border:1px solid rgba(255,77,109,0.35);background:rgba(255,77,109,0.06);color:var(--text);font-family:'DM Sans',sans-serif;font-size:12px;transition:all 0.2s; }
+    .gta-chip:hover { background:var(--accent);border-color:var(--accent);color:#fff; }
+    .gta-note { margin-top:12px;font-size:10px;color:var(--muted);line-height:1.6; }
+    .gta-seo { margin-top:20px;padding:22px;background:var(--card);border:1px solid var(--border);border-radius:20px; }
+    .gta-seo h2 { font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:12px;color:var(--text); }
+    .gta-seo h3 { font-size:13px;color:var(--text);margin:14px 0 4px;font-weight:500; }
+    .gta-seo p { font-size:12px;color:var(--muted);line-height:1.8; }
+    .gta-seo strong { color:var(--text);font-weight:500; }
+    footer { margin-top:40px;text-align:center;color:var(--muted);font-size:12px;z-index:1;position:relative;line-height:2; }
+    footer a { color:var(--accent);text-decoration:none;margin:0 5px; }
+    footer a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <svg width="64" height="64" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 12px;">
+        <rect width="100" height="100" rx="20" fill="#16161a"/>
+        <defs><linearGradient id="lgf" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff4d6d"/><stop offset="100%" stop-color="#c77dff"/></linearGradient></defs>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#ff4d6d" stroke-width="2" stroke-dasharray="4 3" opacity="0.5"/>
+        <text x="50" y="62" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-weight="700" fill="url(#lgf)">%</text>
+        <circle cx="25" cy="28" r="5" fill="#ff4d6d" opacity="0.9"/>
+        <circle cx="75" cy="28" r="4" fill="#c77dff" opacity="0.9"/>
+        <circle cx="22" cy="62" r="3" fill="#ff8fa3" opacity="0.7"/>
+        <circle cx="78" cy="65" r="3" fill="#a855f7" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="tag">✨ Just for fun</div>
+    <h1>Feelings Calculator</h1>
+    <p>Discover the emotional bond between two people</p>
+  </header>
+
+  <!-- AD LINK 1 — Visible banner below header -->
+  <a href="https://uplcm.com/4/12002284" target="_blank" rel="sponsored noopener" class="explore-banner">
+    <div class="explore-banner-text">
+      ✨ Trending offer for you
+      <span>Sponsored · tap to explore →</span>
+    </div>
+    <div class="explore-banner-arrow">→</div>
+  </a>
+
+  <div class="gta-card" id="gtaCard">
+    <div class="gta-top">
+      <span class="gta-badge">🎮 GTA 6 Edition</span>
+      <span class="gta-date">Scheduled launch: 19 Nov 2026</span>
+    </div>
+    <div class="gta-countdown" id="gtaCountdown"></div>
+    <div class="gta-sub">Tap a pair — result instantly calculate ho jaayega 👇</div>
+    <div class="gta-chips">
+      <button class="gta-chip" onclick="applyPreset('Jason','Lucia','love','','and')">💘 Jason & Lucia — Love</button>
+      <button class="gta-chip" onclick="applyPreset('Jason','Lucia','custom','trust','and')">🤝 Jason & Lucia — Trust</button>
+      <button class="gta-chip" onclick="applyPreset('Me','GTA 6','custom','GTA 6 hype','and')">🔥 Me & GTA 6 — Hype</button>
+      <button class="gta-chip" onclick="applyPreset('Me','Rockstar','custom','patience','for')">⏳ Me for Rockstar — Patience</button>
+      <button class="gta-chip" onclick="applyPreset('Me','Heist Partner','custom','trust','and')">🕶️ Me & Heist Partner — Trust</button>
+      <button class="gta-chip" onclick="applyPreset('Me','Vice City','love','','for')">🌴 Me for Vice City — Love</button>
+      <button class="gta-chip" onclick="applyPreset('Bonnie','Clyde','love','','and')">🔫 Bonnie & Clyde — Love</button>
+      <button class="gta-chip" onclick="applyPreset('Jason','Lucia','custom','break up chances','and')">💔 Jason & Lucia — Break-up Chances</button>
+    </div>
+    <div class="gta-note">Unofficial fan-made tool for entertainment. Not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive.</div>
+  </div>
+
+  <div class="card">
+    <div class="emotion-grid" id="emotionGrid"></div>
+    <div class="custom-input-wrap" id="customWrap">
+      <label>Your Custom Feeling</label>
+      <input class="custom-emotion-input" id="customEmotion" type="text" placeholder="e.g. loyalty, trust, cringe, respect..." maxlength="20"/>
+    </div>
+    <div class="mode-row">
+      <button class="mode-btn active" id="btnMutual" onclick="setMode('and')">💞 Mutual</button>
+      <button class="mode-btn" id="btnOneSided" onclick="setMode('for')">💭 One-Sided</button>
+    </div>
+    <div class="input-row">
+      <input type="text" id="name1" placeholder="First name" maxlength="30"/>
+      <span class="connector" id="connectorText">and</span>
+      <input type="text" id="name2" placeholder="Second name" maxlength="30"/>
+    </div>
+    <button class="calc-btn" onclick="calculate()">Calculate ✦</button>
+    <div id="errorMsg" class="error"></div>
+
+    <div id="resultBox" style="display:none" class="result-box">
+      <div class="result-emoji" id="resEmoji"></div>
+      <div class="result-percent" id="resPercent"></div>
+      <div class="result-label" id="resLabel"></div>
+      <div class="quote-wrapper">
+        <textarea class="result-quote" id="resQuote" rows="2" spellcheck="false"></textarea>
+        <button class="edit-btn" onclick="focusQuote()" title="Edit message">✏️</button>
+        <div class="edit-hint" id="editHint">Type your own message, then share!</div>
+      </div>
+      <button class="share-btn" onclick="shareResult()">📤 Share Result</button>
+
+      <!-- AD LINK 2 — Shows after result -->
+      <a href="https://uplcm.com/4/11998876" target="_blank" rel="sponsored noopener" class="result-ad show" id="resultAd">
+        <div class="result-ad-left">
+          <span class="result-ad-emoji">💡</span>
+          <div class="result-ad-text">
+            Curious what else is trending?
+            <span>Sponsored · tap to explore →</span>
+          </div>
+        </div>
+        <span class="result-ad-btn">Open</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="how-card">
+    <h2>✦ How does it work?</h2>
+    <div class="how-grid">
+      <div class="how-item">
+        <div class="how-num">1</div>
+        <div class="how-text"><strong>Pick an emotion</strong><span>Choose from Love, Crush, Friendship, Jealousy, and 6 more — or create your own!</span></div>
+      </div>
+      <div class="how-item">
+        <div class="how-num">2</div>
+        <div class="how-text"><strong>Choose Mutual or One-Sided</strong><span>Mutual = between two people equally. One-Sided = how much one person feels for another.</span></div>
+      </div>
+      <div class="how-item">
+        <div class="how-num">3</div>
+        <div class="how-text"><strong>Enter two names & Calculate</strong><span>Same names always give the same result — it's deterministic, not random!</span></div>
+      </div>
+      <div class="how-item">
+        <div class="how-num">4</div>
+        <div class="how-text"><strong>Edit ✏️ & Share</strong><span>Tap the edit button to write your own custom message, then share with friends!</span></div>
+      </div>
+    </div>
+    <div class="mode-diff">
+      <div class="mode-diff-row">
+        <div class="mode-box">
+          <div class="mode-tag">Mutual</div>
+          <p>Feeling between both equally</p>
+          <code>Rahul and Priya → 74%</code>
+        </div>
+        <div class="mode-box">
+          <div class="mode-tag">One-Sided</div>
+          <p>First person's feeling for second</p>
+          <code>Rahul for Priya → 61%</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trend-card">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;">
+      <span style="font-size:18px">🔥</span>
+      <span style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--text)">Trending Right Now</span>
+    </div>
+    <div class="trend-tags">
+      <button class="ttag" onclick="applyTrend('crush')">💘 Crush Percentage</button>
+      <button class="ttag" onclick="applyTrend('doubt')">👻 Ghosting Level</button>
+      <button class="ttag" onclick="applyTrend('interest')">🐢 Slow Dating Check</button>
+      <button class="ttag" onclick="applyTrend('love')">💍 Marriage Compatibility</button>
+      <button class="ttag" onclick="applyTrend('anger')">🚩 Red Flag Meter</button>
+      <button class="ttag" onclick="applyTrend('sympathy')">🟤 Beige Flag Test</button>
+      <button class="ttag" onclick="applyTrend('obsession')">💬 Situationship %</button>
+      <button class="ttag" onclick="applyTrend('friend')">👯 BFF Test</button>
+    </div>
+  </div>
+
+  <div class="seo-block">
+    <p>Feelings Calculator is a fun tool to calculate love percentage, crush percentage, love or hate score, friendship level, and more between two people. Whether you're wondering about <strong>signs of slow dating</strong>, checking <strong>marriage compatibility</strong>, spotting <strong>red flags vs beige flags</strong>, or figuring out if you're in a <strong>situationship</strong> — just enter two names and find out! Perfect for checking your <strong>crush percentage</strong>, <strong>BFF compatibility</strong>, or even <strong>ghosting levels</strong>. 100% fun, 0% science. 😄</p>
+  </div>
+
+  <div class="gta-seo">
+    <h2>💘 GTA 6 Love Story: Jason & Lucia Explained</h2>
+    <p>Jason and Lucia are the two lead characters of GTA 6, and the trailers put their relationship at the center of the story. Many gaming sites describe it as a modern Bonnie and Clyde-style love story. Rockstar has also said the romance is optional and depends on how you play, so it is not forced on players.</p>
+    <h3>Do you have to romance Jason and Lucia in GTA 6?</h3>
+    <p>According to reports based on Rockstar interviews, no. The relationship is described as optional, so Jason and Lucia can also stay partners in crime.</p>
+    <h3>Can Jason and Lucia break up?</h3>
+    <p>Previews and reports suggest the relationship can go both ways, including a break-up, depending on your choices. For fun, check the <strong>break-up chances</strong> of Jason and Lucia with the calculator.</p>
+    <h3>What is the Jason and Lucia love percentage?</h3>
+    <p>Just for fun, try the <strong>Jason and Lucia love calculator</strong>, their <strong>trust test</strong>, or a <strong>Bonnie and Clyde compatibility test</strong>. Same names always give the same result.</p>
+    <h3>GTA 6 Jason aur Lucia ki love story (Hindi)</h3>
+    <p>GTA 6 mein Jason aur Lucia ki love story game ka sabse bada hissa hai. Neeche ke buttons se unka love percentage, trust aur break-up chances nikalo, aur dosto ko share karo.</p>
+    <div class="gta-chips" style="margin-top:14px;">
+      <button class="gta-chip" onclick="applyPreset('Jason','Lucia','love','','and')">💘 Jason & Lucia Love %</button>
+      <button class="gta-chip" onclick="applyPreset('Bonnie','Clyde','love','','and')">🔫 Bonnie & Clyde Love %</button>
+      <button class="gta-chip" onclick="applyPreset('Jason','Lucia','custom','break up chances','and')">💔 Break-up Chances</button>
+    </div>
+    <p style="margin-top:12px;font-size:11px;">Details are based on public previews and reports before launch and may change in the final game. Unofficial fan-made tool, not affiliated with Rockstar Games or Take-Two Interactive.</p>
+  </div>
+
+  <div class="gta-seo">
+    <h2>🎮 GTA 6 Feelings Calculator</h2>
+    <p>Looking for a <strong>GTA 6 love calculator</strong>? Pick the Jason and Lucia preset above and see their compatibility instantly, or type any two names and calculate your own <strong>GTA 6 couple compatibility</strong>. You can also try the <strong>GTA 6 hype meter</strong>, a <strong>heist partner trust test</strong> with your friend, or a patience score for the long wait. Every result is shareable with one tap.</p>
+    <h3>When does GTA 6 release?</h3>
+    <p>Rockstar Games has scheduled Grand Theft Auto VI for <strong>19 November 2026</strong> on PlayStation 5 and Xbox Series X|S. Check Rockstar's official channels for the latest update.</p>
+    <h3>Who are Jason and Lucia?</h3>
+    <p>Jason and Lucia are the two lead characters shown in the GTA 6 trailers. Our Jason and Lucia love percentage is just for fun and has nothing to do with the actual story.</p>
+    <h3>Is this tool official?</h3>
+    <p>No. This is an unofficial fan-made entertainment tool and is not affiliated with Rockstar Games or Take-Two Interactive. 100% fun, 0% science.</p>
+  </div>
+
+  <footer>
+    Made with 💗 by JustForVibes<br/>
+    <a href="about.html">About Us</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="disclaimer.html">Disclaimer</a> ·
+    <a href="contact.html">Contact</a> ·
+    <a href="https://www.reddit.com/user/Feelings-Calculator/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank" rel="noopener">Reddit</a>
+  </footer>
+</div>
+
+<script>
+  const emotions = {
+    friend:    { emoji:"👯", lines:["Some friendships feel like group projects — one tries, the other just shows up.","It's always 'I got you' — until you fall."] },
+    love:      { emoji:"❤️", lines:["Sometimes love doesn't fade — it just hides where they stopped looking.","It felt full… until I realized I was loving alone."] },
+    hate:      { emoji:"💢", lines:["Hate is just attention in a cheaper outfit.","You never hated me — you just couldn't control me."] },
+    crush:     { emoji:"💘", lines:["It's funny how one smile can ruin your entire emotional stability.","You were never mine, just an overplayed thought in a lonely playlist."] },
+    obsession: { emoji:"🌀", lines:["You call it obsession — I call it remembering too much.","I watched your silence louder than your words."] },
+    doubt:     { emoji:"🤨", lines:["Doubt always enters quietly, then lives rent-free.","Even the clearest truths crack under whispered suspicions."] },
+    anger:     { emoji:"😤", lines:["Anger isn't loud — sometimes it's just silence with clenched fists.","It's not rage — it's the echo of every ignored feeling."] },
+    sympathy:  { emoji:"🫠", lines:["Your sympathy feels like a compliment dipped in pity.","Keep your concern — I've survived better enemies."] },
+    interest:  { emoji:"👀", lines:["Funny how fast interest dies when honesty walks in.","They noticed you just enough to keep you confused."] },
+    jealousy:  { emoji:"🫥", lines:["It's not envy — it's just watching someone live what you only imagined.","They want your life, just not your scars."] }
+  };
+
+  const customQuotes = [
+    "Numbers don't lie — even when people do.",
+    "The calculator has spoken. No appeals.",
+    "Science confirmed what you already felt.",
+    "This result is certified by the universe.",
+    "Even the algorithm sees it clearly.",
+    "Some truths only math can reveal.",
+    "The data is in. Draw your own conclusions.",
+    "Calculated. Delivered. No refunds."
+  ];
+
+  let selectedEmotion = "love", isCustom = false, mode = "and";
+
+  const grid = document.getElementById("emotionGrid");
+  Object.keys(emotions).forEach(key => {
+    const btn = document.createElement("button");
+    btn.className = "pill" + (key === selectedEmotion ? " active" : "");
+    btn.innerHTML = emotions[key].emoji + " " + key.charAt(0).toUpperCase() + key.slice(1);
+    btn.onclick = () => selectEmotion(key);
+    btn.id = "pill_" + key;
+    grid.appendChild(btn);
+  });
+  const customPill = document.createElement("button");
+  customPill.className = "pill-custom";
+  customPill.id = "pill_custom";
+  customPill.innerHTML = "✨ Custom";
+  customPill.onclick = () => selectCustom();
+  grid.appendChild(customPill);
+
+  function selectEmotion(key) {
+    document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+    document.querySelectorAll(".pill-custom").forEach(p => p.classList.remove("active"));
+    document.getElementById("pill_" + key).classList.add("active");
+    selectedEmotion = key; isCustom = false;
+    document.getElementById("customWrap").classList.remove("show");
+    document.getElementById("resultBox").style.display = "none";
+    document.getElementById("errorMsg").textContent = "";
+  }
+
+  function selectCustom() {
+    document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+    document.getElementById("pill_custom").classList.add("active");
+    isCustom = true; selectedEmotion = "custom";
+    document.getElementById("customWrap").classList.add("show");
+    document.getElementById("customEmotion").focus();
+    document.getElementById("resultBox").style.display = "none";
+    document.getElementById("errorMsg").textContent = "";
+  }
+
+  function setMode(m) {
+    mode = m;
+    document.getElementById("connectorText").textContent = m === "and" ? "and" : "for";
+    document.getElementById("btnMutual").classList.toggle("active", m === "and");
+    document.getElementById("btnOneSided").classList.toggle("active", m === "for");
+    document.getElementById("resultBox").style.display = "none";
+    document.getElementById("errorMsg").textContent = "";
+  }
+
+  function calculatePercentage(inputString, isOneSided, firstName) {
+    if (isOneSided) inputString += "#" + firstName.toLowerCase();
+    if (!isOneSided) inputString = inputString.replace(/ /g, "");
+    const lower = inputString.toLowerCase();
+    const charCount = {};
+    for (const ch of lower) charCount[ch] = (charCount[ch] || 0) + 1;
+    let digits = [...lower].map(ch => charCount[ch]);
+    while (digits.length > 2) {
+      const nd = [];
+      const half = Math.floor((digits.length + 1) / 2);
+      for (let i = 0; i < half; i++) {
+        if (i < digits.length - 1 - i) {
+          const s = digits[i] + digits[digits.length - 1 - i];
+          if (s >= 10) nd.push(...String(s).split("").map(Number)); else nd.push(s);
+        } else nd.push(digits[i]);
+      }
+      digits = nd;
+    }
+    if (digits.length === 3) {
+      const s = digits[0] + digits[2];
+      const nd = s >= 10 ? [...String(s).split("").map(Number)] : [s];
+      nd.push(digits[1]); digits = nd;
+    }
+    if (digits.length === 3) {
+      const s = digits[0] + digits[1];
+      digits = s >= 10 ? [...String(s).split("").map(Number), digits[2]] : [s, digits[2]];
+    }
+    let pct = digits.length === 2 ? parseInt(`${digits[0]}${digits[1]}`) : digits.length === 1 ? digits[0] * 11 : 0;
+    return Math.max(1, Math.min(100, pct));
+  }
+
+  function calculate() {
+    const n1 = document.getElementById("name1").value.trim();
+    const n2 = document.getElementById("name2").value.trim();
+    const err = document.getElementById("errorMsg");
+    if (!n1 || !n2) { err.textContent = "⚠️ Please enter both names!"; return; }
+    let emotionName, emoji, quote;
+    if (isCustom) {
+      emotionName = document.getElementById("customEmotion").value.trim();
+      if (!emotionName) { err.textContent = "⚠️ Please enter a custom feeling name!"; return; }
+      emoji = "✨";
+      quote = customQuotes[Math.floor(Math.random() * customQuotes.length)];
+    } else {
+      emotionName = selectedEmotion;
+      emoji = emotions[selectedEmotion].emoji;
+      quote = emotions[selectedEmotion].lines[Math.floor(Math.random() * emotions[selectedEmotion].lines.length)];
+    }
+    err.textContent = "";
+    const cmd = "/" + emotionName + " " + n1 + " " + mode + " " + n2;
+    const pct = calculatePercentage(cmd, mode === "for", n1);
+    document.getElementById("resEmoji").textContent = emoji;
+    document.getElementById("resPercent").textContent = pct + "%";
+    document.getElementById("resLabel").textContent = mode === "for"
+      ? `${n1}'s ${emotionName} for ${n2}`
+      : `${n1} & ${n2} — ${emotionName.charAt(0).toUpperCase() + emotionName.slice(1)}`;
+    document.getElementById("resQuote").value = `"${quote}"`;
+    const box = document.getElementById("resultBox");
+    box.style.display = "block"; box.style.animation = "none";
+    void box.offsetWidth; box.style.animation = "fadeUp 0.5s ease";
+  }
+
+  function applyTrend(emotion) {
+    selectEmotion(emotion);
+    document.getElementById('name1').focus();
+    document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function applyPreset(n1, n2, emo, customName, m) {
+    setMode(m || 'and');
+    if (emo === 'custom') { selectCustom(); document.getElementById('customEmotion').value = customName; }
+    else { selectEmotion(emo); }
+    document.getElementById('name1').value = n1;
+    document.getElementById('name2').value = n2;
+    calculate();
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+    document.querySelector('.card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  (function gtaCountdown() {
+    const target = new Date(2026, 10, 19, 0, 0, 0);
+    const el = document.getElementById('gtaCountdown');
+    function box(n, l) { return '<div class="gta-box"><div class="gta-num">' + n + '</div><div class="gta-lbl">' + l + '</div></div>'; }
+    function tick() {
+      const diff = target - new Date();
+      if (diff <= 0) { el.innerHTML = '<div class="gta-live">🎮 GTA 6 is out! Go calculate your Jason & Lucia moment 👇</div>'; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const mi = Math.floor((diff % 3600000) / 60000);
+      const sec = Math.floor((diff % 60000) / 1000);
+      el.innerHTML = box(d, 'Days') + box(h, 'Hrs') + box(mi, 'Min') + box(sec, 'Sec');
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  function focusQuote() {
+    const q = document.getElementById("resQuote");
+    q.focus(); q.select();
+    document.getElementById("editHint").style.display = "block";
+  }
+
+  function shareResult() {
+    const label = document.getElementById("resLabel").textContent;
+    const pct = document.getElementById("resPercent").textContent;
+    const quote = document.getElementById("resQuote").value;
+    const text = `${label}: ${pct} 💫\n${quote}\n\nCheck yours 👉 ${window.location.href}`;
+    if (navigator.share) navigator.share({ title: "Feelings Calculator", text });
+    else navigator.clipboard.writeText(text).then(() => alert("Result copied! Share it 🎉"));
+  }
+</script>
+</body>
+</html>

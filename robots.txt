@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feelings-calculator.xyz/sitemap.xml
